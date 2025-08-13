@@ -1,9 +1,27 @@
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MapPin, Mail, Phone } from "lucide-react";
 const Hero = () => {
   return <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="container max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
+          {/* Profile Picture Section */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative group">
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/20 shadow-2xl animate-profile-float">
+                <AvatarImage 
+                  src="/placeholder.svg" 
+                  alt="Shraddap - Oracle Apps Consultant"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-3xl md:text-4xl font-bold bg-gradient-primary text-primary-foreground">
+                  SP
+                </AvatarFallback>
+              </Avatar>
+              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300 animate-pulse-slow"></div>
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="gradient-text">SHRADDA P</span>
           </h1>
