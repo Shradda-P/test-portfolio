@@ -8,7 +8,7 @@ const Hero = () => {
           {/* Profile Picture Section */}
           <div className="mb-8 flex justify-center">
             <div className="relative group">
-              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/20 shadow-2xl animate-profile-float">
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/20 shadow-2xl">
                 <AvatarImage 
                   src="/lovable-uploads/66c2b6d6-4157-44d7-aea2-4467cfef4b91.png" 
                   alt="Shraddap - Oracle Apps Consultant"
@@ -18,7 +18,7 @@ const Hero = () => {
                   SP
                 </AvatarFallback>
               </Avatar>
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300 animate-pulse-slow"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
           </div>
           
