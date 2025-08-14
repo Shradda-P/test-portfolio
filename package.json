@@ -3,8 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://shraddap-p.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
+    "predeploy": "vite build",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
